@@ -317,11 +317,14 @@ function get3TopItems(arr) {
  *   [ 1, '2' ] => 1
  */
 function getPositivesCount(arr) {
-  const answer = arr.filter((elem) => {
-    
+  let ans = 0;
+  arr.forEach((elem) => {
+    if (elem > 0) {
+      ans += 1;
+    }
   });
 
-  return answer.length;
+  return ans;
 }
 
 /**
